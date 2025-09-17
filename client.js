@@ -2,7 +2,7 @@
 // Quando seu site está hospedado em um repositório (como GitHub Pages),
 // você precisa usar o endereço público do seu servidor backend e o protocolo seguro 'wss://'.
 // Exemplo para um servidor no Render: 'wss://meu-chat-app.onrender.com'
-const ws = new WebSocket('wss://SEU-SERVIDOR-BACKEND-PUBLICO-AQUI');
+const ws = new WebSocket('wss://dolly193.github.io/chat/');
 
 const form = document.getElementById('form');
 const input = document.getElementById('input');
@@ -69,4 +69,5 @@ form.addEventListener('submit', (e) => {
         ws.send(input.value);
         input.value = '';
     }
+
 });
